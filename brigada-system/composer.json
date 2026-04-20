@@ -1,0 +1,10 @@
+{
+    "name": "brigada/monitoring-system",
+    "description": "Brigada Eskwela Monitoring System",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "require": {
+        "endroid/qr-code": "*"
+    }
+}

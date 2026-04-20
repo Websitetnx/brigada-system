@@ -1,0 +1,165 @@
+/* Custom styles beyond Bootstrap */
+
+/* Animation for cards */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+/* Status indicators */
+.status-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.status-active {
+    background-color: #28a745;
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.5);
+}
+
+.status-inactive {
+    background-color: #dc3545;
+}
+
+.status-warning {
+    background-color: #ffc107;
+}
+
+/* QR Code styling */
+.qr-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.qr-code {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Attendance badge */
+.attendance-badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
+.hours-served {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #28a745;
+}
+
+.hours-remaining {
+    color: #dc3545;
+}
+
+/* Payment status */
+.payment-paid {
+    color: #28a745;
+}
+
+.payment-pending {
+    color: #ffc107;
+}
+
+.payment-overdue {
+    color: #dc3545;
+}
+
+/* Report cards */
+.report-card {
+    border-left: 4px solid;
+    transition: all 0.3s;
+}
+
+.report-card.primary {
+    border-left-color: #007bff;
+}
+
+.report-card.success {
+    border-left-color: #28a745;
+}
+
+.report-card.warning {
+    border-left-color: #ffc107;
+}
+
+.report-card.danger {
+    border-left-color: #dc3545;
+}
+
+/* Print optimization */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    .print-only {
+        display: block !important;
+    }
+    
+    body {
+        font-size: 12pt;
+    }
+    
+    .table {
+        border-collapse: collapse !important;
+    }
+    
+    .table td,
+    .table th {
+        background-color: #fff !important;
+    }
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+    .stats-card {
+        margin-bottom: 15px;
+    }
+    
+    .btn-group {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .btn-group .btn {
+        margin-bottom: 5px;
+        border-radius: 5px !important;
+    }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
